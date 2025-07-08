@@ -371,127 +371,33 @@ span {
   color: var(--second-bg-color);
 }
 
-/* RESPONSIVE BREAKPOINTS */
-
-/* Ekran eni 1200px dan kichik bo‘lsa */
-@media (max-width: 1200px) {
-  html {
-    font-size: 55%;
-  }
-}
-
-/* Ekran eni 991px dan kichik bo‘lsa */
-@media (max-width: 991px) {
-  .header {
-    padding: 2rem 4%;
-  }
-
-  section {
-    padding: 10rem 4% 2rem;
-  }
-
-  .services {
-    padding-bottom: 7rem;
-  }
-
-  .portfolio {
-    padding-bottom: 7rem;
-  }
-
-  .contact {
-    min-height: auto;
-  }
-}
-
-/* Ekran eni 768px dan kichik bo‘lsa */
-@media (max-width: 768px) {
-  #menu-icon {
-    display: block;
-  }
-
-  .navbar {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    background: var(--bg-color);
-    padding: 1rem 4%;
-    border-top: 0.1rem solid rgba(0, 0, 0, 0.2);
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
-    display: none;
-    flex-direction: column;
-    gap: 2rem;
-  }
-
-  .navbar.active {
-    display: flex;
-  }
-
-  .navbar a {
-    display: block;
-    font-size: 2rem;
-    margin: 1.5rem 0;
-  }
-
+/@media (max-width: 768px) {
   .home {
     flex-direction: column;
+    text-align: center;
   }
 
   .home-content h1 {
-    font-size: 4rem;
-  }
-
-  .home-img img {
-    width: 70vw;
-    margin-top: 4rem;
-  }
-
-  .about {
-    flex-direction: column-reverse;
-  }
-
-  .about-img img {
-    width: 70vw;
-  }
-
-  .services h2,
-  .portfolio h2,
-  .contact h2 {
     font-size: 3.5rem;
   }
 
-  .portfolio-container {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-/* Ekran eni 617px dan kichik bo‘lsa */
-@media (max-width: 617px) {
-  .portfolio-container {
-    grid-template-columns: 1fr;
-  }
-}
-
-/* Ekran eni 450px dan kichik bo‘lsa */
-@media (max-width: 450px) {
-  html {
-    font-size: 50%;
+  .home-img img {
+    width: 80%;
+    margin-top: 2rem;
   }
 
-  .contact form .input-box input {
-    width: 100%;
-  }
-}
-
-/* Ekran eni 365px dan kichik bo‘lsa */
-@media (max-width: 365px) {
-
-  .home-img img,
-  .about-img img {
-    width: 90vw;
-  }
-
-  .footer {
+  .about {
     flex-direction: column;
+    text-align: center;
+  }
+
+  .about-img img {
+    width: 80%;
+    margin-bottom: 2rem;
+  }
+
+  form input,
+  form textarea {
+    width: 100%;
   }
 }
