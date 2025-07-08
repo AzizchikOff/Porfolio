@@ -371,7 +371,7 @@ span {
   color: var(--second-bg-color);
 }
 
-/@media (max-width: 768px) {
+@media (max-width: 768px) {
   .home {
     flex-direction: column;
     text-align: center;
