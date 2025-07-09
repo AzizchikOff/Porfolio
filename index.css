@@ -298,7 +298,7 @@ span {
   color: var(--second-bg-color);
 }
 
-..contact form {
+.contact form {
   display: flex;
   flex-direction: column;
   gap: 2rem;
